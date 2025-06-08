@@ -26,7 +26,7 @@ public class WeatherService {
     public Mono<String> getWeather(String city)
     {
         String url=baseUrl+city+"&appid="+apiKey;
-        log.info("Inside WeatherService class");
+        log.info("Inside WeatherService class")
         return webClient.get()
                 .uri(url)
                 .retrieve()
